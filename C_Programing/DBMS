@@ -1,0 +1,87 @@
+insert into student values(11,'amit,'pune',95);
+
+insert into student values(12,'rahul','pune',90);
+
+insert into student values(13,'pooja,'mumbai',80);
+
+insert into student values(14,'sayali,'mumbai',85);
+
+insert into student values(15,'raj,'raigad',75);
+
+insert into student values(16,'kalpana,'satara',60);
+
+select * from student;
+
+select name, city from student;
+
+select name, marks from student;
+
+slect name, marks from student where marks >80;
+
+select name, marks from student where marks >= 80;
+
+select name, marks from student where marks > 80 AND city = 'mumbai'
+
+select name, marks from student where marks > 96 AND city = 'mumbai'
+
+select name, marks from student where city = pune OR city 'satara';
+
+select * from student;
+
+
+select * from student order by marks;
+
+select * from student order by marks ASC;
+
+select * from student order by marks DESC;
+
+select * from student;
+
+select * from student order by name;
+
+select * from student order by name DESC;
+
+select name from student where name like 'R%';
+
+select name from student where name like 'R__';
+
+select name from student where name like 'R%l';
+
+slect* from student ;
+
+update student set marks = 92 where rno =12;
+
+select* from student;
+
+delete from student where rno = 16;
+
+select * from student;
+
+select max(marks) from student;
+
+select max(marks),name from student;
+
+
+select min(marks),name from student;
+
+
+select min(marks) from student;
+
+
+select sum(marks) from student;
+
+select AVG(marks) from student;
+
+
+select AVG(names) from student;
+
+
+select count(name) from student;
+
+select count(rno) from student;
+
+select count(name) from student where city = pune;
+
+select count(name) from student where city = mumbai;
+
+select count(name) from student where city = satara; 
